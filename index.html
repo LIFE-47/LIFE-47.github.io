@@ -13,8 +13,16 @@
     header {
       background: #4a90e2;
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 10px;
     }
     section {
       padding: 20px;
@@ -39,6 +47,19 @@
       padding: 15px;
       background: #fafafa;
     }
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #4a90e2;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .card a:hover {
+      background: #357abd;
+    }
     footer {
       text-align: center;
       padding: 15px;
@@ -50,7 +71,7 @@
 <body>
 
 <header>
-  <img src="profile.jpg" alt="รูปโปรไฟล์" style="width:150px;height:150px;border-radius:50%;object-fit:cover;margin-bottom:10px;">
+  <img src="profile.jpg" alt="รูปโปรไฟล์">
   <h1>นายพีรพัมน์ อุปพงษ์</h1>
   <p>รหัสนักศึกษา 68040249102</p>
   <p>Web Developer | Student</p>
@@ -58,29 +79,32 @@
 
 <section>
   <h2>เกี่ยวกับฉัน</h2>
-  <p>สวัสดีครับ ผมกำลังเรียนรู้การพัฒนาเว็บไซต์ สนใจด้าน Web, Programming และ Game Development</p>
+  <p>
+    สวัสดีครับ ผมกำลังเรียนรู้การพัฒนาเว็บไซต์  
+    สนใจด้าน Web, Programming และ Game Development
+  </p>
 </section>
 
 <section>
   <h2>ผลงาน (Projects)</h2>
   <div class="projects">
+
     <div class="card">
       <h3>Roblox Experience</h3>
       <p>เกมที่ผมสร้างบน Roblox</p>
-      <a href="https://www.roblox.com/share?code=61f33abbed2bea4bab8cd6566c51ef31&type=ExperienceDetails&stamp=1768637427604" target="_blank">▶ เล่นเกม</a>
+      <a href="https://www.roblox.com/share?code=61f33abbed2bea4bab8cd6566c51ef31&type=ExperienceDetails&stamp=1768637427604" target="_blank">
+        ▶ เล่นเกม
+      </a>
     </div>
+
     <div class="card">
       <h3>Calculator</h3>
-      <p>เว็บเครื่องคิดเลขอย่างง่ายด้วย HTML/CSS/JS</p>
+      <p>เว็บเครื่องคิดเลขอย่างง่ายด้วย HTML / CSS / JS</p>
+      <a href="https://github.com/LIFE-47/REPO" target="_blank">
+        ▶ ดู
+      </a>
     </div>
-    <div class="card">
-      <h3>Roblox Project</h3>
-      <p>สร้างฉากและอนิเมชันใน Roblox Studio</p>
-    </div>
-    <div class="card">
-      <h3>Portfolio Website</h3>
-      <p>เว็บไซต์แนะนำตัวเอง</p>
-    </div>
+
   </div>
 </section>
 
